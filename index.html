@@ -10,14 +10,85 @@
         <img src="img/logo.png" width = 75 height = 75>
         <button class="button">Autobiography</button>
         <button class="button">Skills & Projects</button>
-        <button class="button">More About Me</button>
+        <a class="button" href="https://www.facebook.com/erileeey.amistoso" target="_blank">
+            <button class="button">More About Me</button>
+        </a> 
+        
     </header>
+    
     <div class="container">
-        <div class="profile">
-            <img src="img/profile.jpg" width = 75 height = 75>
-            <h2>Erin Reilley</h2>
-            <p>BS Computer Science</p>
+        <div class="top">
+            <!-- PART 1 INTRODUCTION -->
+            <div class="profile-card">
+                <img src="img/profile.jpg">
+                <div class="profile-info">
+                    <div class="badge">INTRODUCTION</div>
+                        
+                    <h2>Erin Reilley</h2>
+                    <p>BS Computer Science</p>
+                    <div class="butt_form">
+                        <a href="https://www.instagram.com/straw.berrynnn/" target="_blank">
+                            <button id="ig">Instagram</button>
+                        </a> 
+
+                        <a href="https://github.com/lilynnn27" target="_blank">
+                            <button id="git">Github</button>
+                        </a> 
+                    </div>
+                </div>
+                
+            </div>
+            <!-- PART 2 ABOUT ME/AUTOBIOGRAPHY -->
+            <div class="about-card">
+                <div class="about-info">
+                    <div class="badge">ABOUT ME</div>
+                    <p>EME EME EME</p>
+                </div>
+                
+            </div>
+
+            <!-- PART 3 SKILLS -->
+            <div class="skl-card">
+                <div class="skl-info">
+                    <div class="badge">SKILLS</div>
+                    <br>
+                    <br>
+                    <li>EME EME EME</li>
+                </div>
+                
+            </div>
+
         </div>
+        <!-- end of top part -->
+
+         <div class="bottom">
+            <!-- PART 4 EDUCATION -->
+            <div class="edu-card">
+                <div class="edu-info">
+                    <div class="badge">EDUCATION</div>
+                    <h3>SCHOOLLL</h3>
+                    <p>EME EME EME</p>
+                </div>
+                
+            </div>
+
+            <!-- PART 5 PROJECTS -->
+            <div class="proj-card">
+                <div class="proj-info">
+                    <div class="badge">PROJECTS</div>
+                    <h3>FRESHMAN YEAR</h3>
+                    <p>EME EME EME</p>
+                    <hr> 
+                    <h3>SOPHOMORE YEAR</h3>
+                    <p>EME EME EME</p>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- end of bottom -->
+
+    </div>
     
 </body>
 
@@ -26,28 +97,91 @@
         background: #e5b7ba;
     }
     header{
-        /* background: #f4a7b9; */
         padding: 10px;
         display: flex;
-        align-items: center;
-        gap: 20px;
-
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 25px;
     }
-    .button {
+    .button{
         background-color: #dd8a90;
         padding: 5px 30px;
         color: black; 
         border: none;
-        font-size: 18px; 
+        font-size: 20px; 
         font-weight: bold;
-        border-radius: 10px; /*rounded corner*/
+        border-radius: 10px; 
+        align-content: center;
     }
     .container{
         background: black;
         display: flex;
         justify-content: center;
         gap: 20px;
+        color:#e5b7ba
     }
+    .profile-card, .edu-card, .about-card, .skl-card, .proj-card {
+    background: black;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    position: relative;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.profile-info, .edu-info, .about-info, .skl-info, .proj-info {
+    background: #e5b7ba;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: -10px; 
+}
+
+.badge {
+    background: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#git, #ig {
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+#ig {
+    background: #dd8a90;
+    color: black;
+}
+
 </style>
 
 </html>
