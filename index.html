@@ -17,7 +17,7 @@
     </header>
     
     <div class="container">
-        <div class="top">
+        <div class="left">
             <!-- PART 1 INTRODUCTION -->
             <div class="profile-card">
                 <img src="img/profile.jpg">
@@ -69,7 +69,7 @@
         </div>
         <!-- end of top part -->
 
-         <div class="bottom">
+         <div class="right">
             <!-- PART 4 EDUCATION -->
             <div class="edu-card">
                 <div class="edu-info">
@@ -156,9 +156,14 @@
         color:#e5b7ba;
         flex-direction: column;
     }
-    .top, .bottom{
+    .left, .right{
         width: 100%;
         display: flex;
+    }
+    .left{
+        flex-direction: column;
+    }
+    .right{
         flex-direction: row;
     }
     .profile-card, .edu-card, .about-card, .skl-card, .proj-card {
