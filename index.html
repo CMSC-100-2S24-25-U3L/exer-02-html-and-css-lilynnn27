@@ -7,32 +7,38 @@
 
 <body>
     <header>
+        <!-- contains a nav bar and my self created logo -->
         <img src="img/logo.png" width = 75 height = 75>
         <button class="button">Autobiography</button>
         <button class="button">Skills & Projects</button>
         <a class="button" href="https://www.facebook.com/erileeey.amistoso" target="_blank">
             <button class="button">More About Me</button>
+            <!-- redirects to facebook -->
         </a> 
         
     </header>
     
     <div class="container">
-        <div class="left">
+        <!-- Labelled as left to be used as a flexbox later, contains 3 "cards" -->
+        <div class="left"> 
             <!-- PART 1 INTRODUCTION -->
             <div class="profile-card">
+                <!-- actually the -card here is similar to -info, just used it for background colors and spacing  -->
                 <img src="img/profile.jpg">
                 <div class="profile-info">
                     <div class="badge">INTRODUCTION</div>
-                        
+                        <!-- the badge serves as a label for each "card" -->
                     <h2>Erin Reilley</h2>
                     <p>BS Computer Science</p>
                     <div class="butt_form">
-                        <a href="https://www.instagram.com/straw.berrynnn/" target="_blank">
+                        <a href="https://www.instagram.com/straw.berrynnn/" target="_blank"> 
                             <button id="ig">Instagram</button>
+                            <!-- redirects to instagram -->
                         </a> 
 
                         <a href="https://github.com/lilynnn27" target="_blank">
                             <button id="git">Github</button>
+                            <!-- redirects to github -->
                         </a> 
                     </div>
                 </div>
@@ -66,8 +72,9 @@
             </div>
 
         </div>
-        <!-- end of top part -->
+        <!-- end of left part -->
 
+        <!-- right part of the flexbox -->
          <div class="right">
             <!-- PART 4 EDUCATION -->
             <div class="edu-card">
@@ -118,6 +125,7 @@
     
 </body>
 
+<!-- (CSS) Styling https://www.geeksforgeeks.org/css-cheat-sheet-a-basic-guide-to-css/ -> this site helped a lot -->
 <style>
     html{
         background: #e5b7ba;
