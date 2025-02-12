@@ -42,7 +42,11 @@
             <div class="about-card">
                 <div class="about-info">
                     <div class="badge">ABOUT ME</div>
-                    <p>EME EME EME</p>
+                    <p>My name is Erin Amistoso, and I was born on October 27, 2004, in Quezon City. 
+                        I am currently 20 years old and reside in Cainta, Rizal. 
+                        I am a sophomore at the University of the Philippines - Los Baños (UPLB), 
+                        currently enrolled in the second semester of the 2024-2025 academic year. 
+                        </p>
                 </div>
                 
             </div>
@@ -53,7 +57,11 @@
                     <div class="badge">SKILLS</div>
                     <br>
                     <br>
-                    <li>EME EME EME</li>
+                    <li>Time Management</li>
+                    <li>Technical Documentation</li>
+                    <li>Front-end Development</li>
+                    <li>Teamwork and Communication</li>
+                    
                 </div>
                 
             </div>
@@ -66,8 +74,17 @@
             <div class="edu-card">
                 <div class="edu-info">
                     <div class="badge">EDUCATION</div>
-                    <h3>SCHOOLLL</h3>
-                    <p>EME EME EME</p>
+                    <h3>Sta. Rosa Catholic School</h3>
+                    <p>2009-2014</p>
+                    <hr>
+                    <h3>Knights and Archers Montessori School</h3>
+                    <p>2014-2017</p>
+                    <hr>
+                    <h3>Rizal National Science High School</h3>
+                    <p>2017-2023</p>
+                    <hr>
+                    <h3>University of the Philippines - Los Baños</h3>
+                    <p>2023-Present</p>
                 </div>
                 
             </div>
@@ -77,10 +94,20 @@
                 <div class="proj-info">
                     <div class="badge">PROJECTS</div>
                     <h3>FRESHMAN YEAR</h3>
-                    <p>EME EME EME</p>
+                    <h4>CMSC 12</h4>
+                    <li>Specs: Typing Game </li>
+                    <li>Programming Language: Python</li>
+                    <br>
                     <hr> 
                     <h3>SOPHOMORE YEAR</h3>
-                    <p>EME EME EME</p>
+                    <h4>CMSC 150 </h4>
+                    <li>Specs: Diet Problem Solver</li>
+                    <li>Programming Language: R</li>
+                    <br>
+                    <h4>CMSC 22</h4>
+                    <li>Specs: 2 Player Fighting Game</li>
+                    <li>Programming Language: Java</li>
+                    <br>
                 </div>
                 
             </div>
@@ -103,6 +130,13 @@
         flex-wrap: nowrap;
         gap: 25px;
     }
+    hr{
+        border: 2px dashed #dd8a90;
+    }
+    p, li, h4{
+        font-family: "Arial Rounded MT", sans-serif;
+        font-size: 10;
+    }
     .button{
         background-color: #dd8a90;
         padding: 5px 30px;
@@ -117,11 +151,13 @@
         background: black;
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 20px;
         color:#e5b7ba;
         flex-direction: column;
     }
     .top, .bottom{
+        width: 100%;
         display: flex;
         flex-direction: row;
     }
@@ -134,7 +170,17 @@
     width: 250px;
     margin: auto;
     position: relative;
-}
+    }
+
+    .profile-card, .about-card, .skl-card{
+        width: 300px;
+        height: 250px; 
+    }
+
+    .edu-card, .proj-card{
+        width: 300px;
+        height: 550px; 
+    }
 
 .profile-card img {
     width: 100px;
