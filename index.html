@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Personal Porfolio</title>
+</head>
+
+<body>
+    <header>
+        <!-- contains a nav bar and my self created logo -->
+        <img src="img/logo.png" width = 75 height = 75>
+        <button class="button">Autobiography</button>
+        <button class="button">Skills & Projects</button>
+        <a class="button" href="https://www.facebook.com/erileeey.amistoso" target="_blank">
+            <button class="button">More About Me</button>
+            <!-- redirects to facebook -->
+        </a> 
+        
+    </header>
+    
+    <div class="container">
+        <!-- Labelled as left to be used as a flexbox later, contains 3 "cards" -->
+        <div class="left"> 
+            <!-- PART 1 INTRODUCTION -->
+            <div class="profile-card">
+                <!-- actually the -card here is similar to -info, just used it for background colors and spacing  -->
+                <img src="img/profile.jpg">
+                <div class="profile-info">
+                    <div class="badge">INTRODUCTION</div>
+                        <!-- the badge serves as a label for each "card" -->
+                    <h2>Erin Reilley</h2>
+                    <p>BS Computer Science</p>
+                    <div class="butt_form">
+                        <a href="https://www.instagram.com/straw.berrynnn/" target="_blank"> 
+                            <button id="ig">Instagram</button>
+                            <!-- redirects to instagram -->
+                        </a> 
+
+                        <a href="https://github.com/lilynnn27" target="_blank">
+                            <button id="git">Github</button>
+                            <!-- redirects to github -->
+                        </a> 
+                    </div>
+                </div>
+                
+            </div>
+            <!-- PART 2 ABOUT ME/AUTOBIOGRAPHY -->
+            <div class="about-card">
+                <div class="about-info">
+                    <div class="badge">ABOUT ME</div>
+                    <p>My name is Erin Amistoso, and I was born on October 27, 2004, in Quezon City. 
+                        I am currently 20 years old and reside in Cainta, Rizal. 
+                        I am a sophomore at UPLB and is currently enrolled in the second semester of A.Y. 2024-2025. 
+                        </p>
+                </div>
+                
+            </div>
+
+            <!-- PART 3 SKILLS -->
+            <div class="skl-card">
+                <div class="skl-info">
+                    <div class="badge">SKILLS</div>
+                    <br>
+                    <br>
+                    <li>Time Management</li>
+                    <li>Technical Documentation</li>
+                    <li>Front-end Development</li>
+                    <li>Teamwork and Communication</li>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- end of left part -->
+
+        <!-- right part of the flexbox -->
+         <div class="right">
+            <!-- PART 4 EDUCATION -->
+            <div class="edu-card">
+                <div class="edu-info">
+                    <div class="badge">EDUCATION</div>
+                    <h3>Sta. Rosa Catholic School</h3>
+                    <p>2009-2014</p>
+                    <hr>
+                    <h3>Knights and Archers Montessori School</h3>
+                    <p>2014-2017</p>
+                    <hr>
+                    <h3>Rizal National Science High School</h3>
+                    <p>2017-2023</p>
+                    <hr>
+                    <h3>University of the Philippines - Los Baños</h3>
+                    <p>2023-Present</p>
+                </div>
+                
+            </div>
+
+            <!-- PART 5 PROJECTS -->
+            <div class="proj-card">
+                <div class="proj-info">
+                    <div class="badge">PROJECTS</div>
+                    <h3>FRESHMAN YEAR</h3>
+                    <h4>CMSC 12</h4>
+                    <li>Specs: Typing Game </li>
+                    <li>Programming Language: Python</li>
+                    <br>
+                    <hr> 
+                    <h3>SOPHOMORE YEAR</h3>
+                    <h4>CMSC 150 </h4>
+                    <li>Specs: Diet Problem Solver</li>
+                    <li>Programming Language: R</li>
+                    <br>
+                    <h4>CMSC 22</h4>
+                    <li>Specs: 2 Player Fighting Game</li>
+                    <li>Programming Language: Java</li>
+                    <br>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- end of bottom -->
+
+    </div>
+    
+</body>
+
+<!-- (CSS) Styling https://www.geeksforgeeks.org/css-cheat-sheet-a-basic-guide-to-css/ -> this site helped a lot -->
+<style>
+    html{
+        background: #e5b7ba;
+    }
+    header{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 25px;
+    }
+    hr{
+        border: 2px dashed #dd8a90;
+    }
+    p, li, h4{
+        font-family: "Arial Rounded MT", sans-serif;
+        font-size: 10;
+    }
+    .button{
+        background-color: #dd8a90;
+        padding: 5px 30px;
+        color: black; 
+        border: none;
+        font-size: 20px; 
+        font-weight: bold;
+        border-radius: 10px; 
+        align-content: center;
+    }
+    .container{
+        background: #dd8a90;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        color:#e5b7ba;
+        flex-direction: row;
+    }
+    .left, .right{
+        width: 100%;
+        display: flex;
+    }
+    .left{
+        flex-direction: column;
+    }
+    .right{
+        flex-direction: row;
+    }
+    .profile-card, .edu-card, .about-card, .skl-card, .proj-card {
+    background: #dd8a90;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    position: relative;
+    }
+
+    .profile-card, .about-card, .skl-card{
+        width: 300px;
+        height: 250px; 
+    }
+
+    .edu-card, .proj-card{
+        width: 300px;
+        height: 550px; 
+    }
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.profile-info, .edu-info, .about-info, .skl-info, .proj-info {
+    color: black;
+    background: #e5b7ba;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: -10px; 
+}
+
+.badge {
+    background: black;
+    color: #e5b7ba;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#git, #ig {
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+#ig {
+    background: #dd8a90;
+    color: black;
+}
+
+</style>
+
+</html>
+
